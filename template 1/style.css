@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
 nav {
   max-width: 98vw;
   margin-top: 30px;
@@ -39,7 +43,6 @@ section h2 {
   font-size: 2.8rem;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  color: black;
   text-align: center;
 }
 
@@ -82,13 +85,12 @@ section h4 {
   border: solid 1px black;
   border-radius: 10px;
   margin-bottom: 20px;
+  color: black;
 }
 
 .quest h6,
 a {
   text-decoration: none;
-  color: black;
-  font-family: "Montserrat", sans-serif Regular;
   padding: 25px;
   font-size: 1.2rem;
   font-weight: 450;
@@ -117,7 +119,6 @@ a {
   font-weight: 900;
   font-family: "Moul", cursive;
   line-height: 80px;
-  color: black;
 }
 
 .span {
@@ -143,9 +144,8 @@ a {
   padding: 8px;
 }
 
-.navbar-toggler {
-  border: none;
-}
+.navbar-toggler-icon, .navbar-toggler  {
+  border: none!important;}
 
 .navbar-toggler:after {
   content: "";
@@ -187,5 +187,22 @@ a {
 
   #ready h4 {
     line-height: 2.7rem;
+  }
+
+  .mob{
+    margin-bottom: 0!important;
+  }
+
+  .mob2{
+    padding: 40px;
+  }
+
+  .spacer{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .row{
+    margin-top: 0
   }
 }
