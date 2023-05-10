@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&family=Moul&family=Pacifico&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+nav {
+  max-width: 98vw;
+  margin-top: 30px;
+}
+
+.p-top {
+  padding-top: 60px;
+}
+
+#header h1 {
+  font-family: "Pacifico", cursive;
+  color: #ec594d;
+  font-size: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#header h6 {
+  max-width: 330px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+section {
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+section p {
+  max-width: 450px;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+section h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ec594d;
+}
+
+.row {
+  margin-top: 90px;
+}
+
+section .container {
+  max-width: 800px;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+section .spacer {
+  max-width: 190px;
+}
+
+section h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.quest {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.quest h6,
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif Regular;
+  padding: 25px;
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+
+.quest:before {
+  font-size: 20px;
+  font-weight: 550;
+  content: "+";
+  position: absolute;
+  right: 30px;
+  top: 23px;
+}
+
+.card-body {
+  border: none;
+  padding: 25px;
+  padding-top: 0px;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+#ready h4 {
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-family: "Moul", cursive;
+  line-height: 80px;
+  color: black;
+}
+
+.span {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 1px;
+  background: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+#ready p {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  margin-bottom: 60px;
+}
+#footer h6 {
+  text-align: center;
+  padding: 8px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:after {
+  content: "";
+
+  position: absolute;
+  background: white;
+  height: 100%;
+  left: 7px;
+  bottom: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  z-index: -1;
+}
+
+.clicked,
+.clicked .card {
+  background: #fdeeed;
+  border: none;
+}
+
+.clicked h6 {
+  color: #ec594d;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  section {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .ecc {
+    flex-direction: column-reverse;
+  }
+
+  #ready h4 {
+    line-height: 2.7rem;
+  }
+}

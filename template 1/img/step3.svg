@@ -1,0 +1,22 @@
+<svg width="235" height="352" viewBox="0 0 235 352" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="75" y="33" width="160" height="259" rx="14" fill="#FBDEDB"/>
+<circle cx="118" cy="85" r="32.5" fill="#FBDEDB" stroke="#A2190D" stroke-width="5"/>
+<path d="M115.253 85.66L118.473 74.62L121.831 85.66H115.253ZM123.993 91.502L126.799 99H133.883L122.153 67.306H114.839L103.063 99H110.239L113.045 91.502H123.993Z" fill="#A2190D"/>
+<rect x="83" y="137" width="101" height="16" rx="8" fill="black"/>
+<rect x="83" y="170" width="101" height="16" rx="8" fill="black"/>
+<rect x="83" y="203" width="101" height="16" rx="8" fill="black"/>
+<rect x="83" y="248" width="142" height="26" rx="4" fill="#EC594D"/>
+<path d="M200 143.87L208.088 152L225 135" stroke="#EC594D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 176.87L208.088 185L225 168" stroke="#EC594D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 209.87L208.088 218L225 201" stroke="#EC594D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.5453 20.2569V0H12.1816V20.2569C15.7661 17.5375 19.9244 15.973 24.3635 15.973C28.8025 15.973 32.9608 17.5375 36.5453 20.2569Z" fill="black"/>
+<path d="M36.5455 20.2569C32.961 17.5375 28.8027 15.9729 24.3636 15.9729C19.9246 15.9729 15.7663 17.5375 12.1818 20.2569C4.90135 25.7819 0 36.0965 0 47.9189H48.7273C48.7273 36.0965 43.8259 25.7819 36.5455 20.2569Z" fill="#EC594D"/>
+<path d="M48.7269 71.8784H24.3633V167.716H48.7269V71.8784Z" fill="#EC594D"/>
+<path d="M24.3636 71.8784H0V167.716H24.3636V71.8784Z" fill="#FFC6C1"/>
+<path d="M24.3633 303.487H42.636L48.7269 191.676H24.3633V303.487Z" fill="#EC594D"/>
+<path d="M24.3636 303.487V191.676H0L6.09091 303.487H24.3636Z" fill="#FFC6C1"/>
+<path d="M48.7273 71.8784V47.9189H0V71.8784H24.3636H48.7273Z" fill="#A2190D"/>
+<path d="M0 167.716V191.676H24.3636H48.7273V167.716H24.3636H0Z" fill="#A2190D"/>
+<path d="M48.7275 47.9189V71.8784V167.716H67.0003V47.9189H48.7275Z" fill="black"/>
+<path d="M24.3635 303.487H6.09082L15.2272 335.433V339.426C15.2272 346.042 19.3178 351.406 24.3635 351.406C29.4093 351.406 33.4999 346.042 33.4999 339.426V335.433L42.6363 303.487H24.3635Z" fill="black"/>
+</svg>
