@@ -200,6 +200,12 @@ ul{
         padding-top: 0px ;
         padding-bottom: 50px ;   
     }
+
+
+    #homepage::before{
+        top: -190px
+    }
+
     
 }
 
@@ -225,5 +231,8 @@ ul{
         display: flex;
         align-items: center;
     }
+
+    
+    
     
 }
