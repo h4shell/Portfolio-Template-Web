@@ -232,7 +232,25 @@ ul{
         align-items: center;
     }
 
+}   
+@media (max-width: 428px){
     
+    #header p::after{
+
+    left: 9rem;
+
+}
+}
+
+
+@media (max-width: 416px){
     
-    
+    #header p::after{
+
+    left: 9rem;
+
+}
+.mob1{
+    display: none!important;
+}
 }
