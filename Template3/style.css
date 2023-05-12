@@ -8,8 +8,30 @@
     box-sizing: border-box;
 }
 
+.show:after{
+    background: linear-gradient(#0a1c26d0, #0a1c26);
+    content:"";
+    height: 400px;
+    aspect-ratio: 1;
+    display: block;
+    position: absolute;
+    left: -300px;
+    top: -200px;
+    mix-blend-mode: overlay;
+    transform: rotate(35deg);
+    filter: blur(15px);
+    
+}
+
 nav{
-    background: linear-gradient(rgba(0, 0, 0, 0.637), transparent)
+    
+}
+
+.nav::before{
+    content: "123";
+    background: red;
+    height: 100px;
+    display: block;
 
 }
 
@@ -208,6 +230,10 @@ ul{
 
     
 }
+
+
+
+
 
 
 @media (max-width: 575px){
