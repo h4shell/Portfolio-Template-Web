@@ -4,6 +4,15 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.icons .container{
+    scale: 1;
+    transition: 0.3s all ease-in-out;
+}
+
+.icons .container:hover{
+    scale: 1.5;
+}
+
 #screen{
     min-height: 100vh;
     
