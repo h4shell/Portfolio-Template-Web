@@ -393,7 +393,7 @@ a{
     aspect-ratio: 1;
     display: block;
     position: absolute;
-    background-image: url(/Portfolio/img/quotes.svg);
+    background-image: url('https://h4shell.github.io/Portfolio-Template-Web/Portfolio/img/quotes.svg');
     background-repeat: no-repeat;
     background-position: center;
     right: 10px;
@@ -410,7 +410,7 @@ a{
     aspect-ratio: 1;
     display: block;
     position: absolute;
-    background-image: url(/Portfolio/img/quotes.svg);
+    background-image: url('https://h4shell.github.io/Portfolio-Template-Web/Portfolio/img/quotes.svg');
     background-repeat: no-repeat;
     background-position: center;
     top: -26px
