@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/*=================
+        Global
+=================== */
+:root{
+    --primary: #282C33;
+    --primart-color: #c778dd;
+
+}
+
+*{
+    position: relative;
+}
+
+body{
+    background: var(--primary);
+    color: white;
+    font-family: 'Fira Code', monospace;
+    
+}
+
+
+
+#navigator{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+.grid{
+    display: grid;
+}
+
+/*=================
+    Tipography
+=================== */
+
+h2{
+    font-size: clamp(1.0, 1.9rem,2vw);
+    font-weight: 400;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.title-section h3::before{
+    content:"#";
+    color: var(--primart-color)
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+p{
+    font-weight: 100;
+    color: rgb(190, 190, 190);
+    font-size: 0.9rem;
+}
+
+b{
+    color: white;
+}
+
+h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero h4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: end;
+    border: 1px solid white;
+    border-top: none;
+    max-width: max-content;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: -0.55rem;
+}
+
+
+
+.hero h3{
+    border: 1px solid white;
+    grid-column: 2/3;
+    padding: 20px;
+    
+}
+
+
+
+/*=================
+    Structure
+=================== */
+
+#header{
+    height: 100vh;
+}
+
+#header h2{
+    margin-top: 100px;
+}
+
+.text{max-width: 500px;}
+
+#header .imgelement{
+    left:0;
+    top: 6rem;
+    z-index: -1;
+}
+
+#header .imgdots{
+    right:-2.5rem;
+    position: absolute;
+    bottom: 5rem;
+    
+}
+
+.title-section{
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    
+}
+
+
+
+/*=================
+    Elements
+=================== */
+
+.card img{
+    height: 200px;
+    width: auto;
+    object-fit:cover;
+}
+
+#project::before{
+    content: "";
+    background-image: url(/Portfolio/img/Dots.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: block;
+    top: 50%;
+    left: -50px;
+}
+
+#contacts::before{
+    content: "";
+    background-image: url(/Portfolio/img/Dots.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: block;
+    top: 90%;
+    left: -10px;
+}
+
+.signer{
+    border-right: 1px solid;
+    height: 200px;
+    width: 1px;
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+
+.signer .container{
+    position: absolute;
+    top: 210px;
+    right: 5px;
+    
+}
+
+
+
+
+
+
+
+.navbar-toggler{
+    border: none;
+}
+
+#header p{
+    font-size: 1.1rem;
+}
+
+.navbar-nav a{
+    padding: 0 0.8rem;
+    font-size: 1.0rem;
+}
+
+.navbar-nav a::before{
+    content: "#";
+    color: var(--primart-color);
+    
+    
+}
+
+.grid-card{
+    border:1px solid white;
+    background: var(--primary)    
+}
+
+.container-skill .grid-card:nth-child(1){
+    grid-row: 1/5;
+    grid-column: 1/2;
+}
+
+.container-skill .grid-card:nth-child(2){
+    grid-row: 1/5;
+    grid-column: 2/3;
+    
+}
+.container-skill .grid-card:nth-child(3){
+    grid-row: 1/7;
+    grid-column: 3/4;
+    
+}
+
+.container-skill .grid-card:nth-child(4){
+    grid-row: 5/9;
+    grid-column: 2/3;
+}
+
+.container-skill .grid-card:nth-child(5){
+    grid-row: 7/12;
+    grid-column: 3/4;
+}
+
+
+
+.container-skill .grid{
+    grid-template-columns: 10rem 10rem 10rem;
+    gap: 20px;
+    grid-template-rows: repeat(13, 0.4rem);
+    ;
+    
+}
+
+.grid-card p{
+    margin:0;
+    padding: 8px;    
+}
+
+.container-skill{
+    max-width: 10vw
+    
+}
+
+.container-skill h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    margin: 0;
+    
+}
+
+.container-skill h3, .container-skill p{
+    padding: 5px;
+}
+
+.img-skills{
+    position: absolute;
+    left: 0;
+    top:-2rem
+}
+
+
+.myprojects{
+    grid-template-columns: repeat(3, minmax(250px, 300px));
+    gap: 10px;
+    grid-auto-rows: max-content;
+    max-width: max-content;
+    
+    
+}
+
+.myprojects .card{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+
+}
+
+
+.myprojects h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.card p:first-child{
+    
+    border-bottom: 1px solid white;
+   
+    
+
+}
+
+.card p, .card h6, .card .container-button{
+    padding: 3px 12px;
+    
+}
+
+.card p:first-child{
+    
+    min-height: 3rem;
+}
+
+.cont h6:first-of-type{
+    min-height: 4rem;
+    
+}
+
+.container-button{
+    position: relative;
+    
+}
+
+.title-section .span{
+    height: 2px;
+    width: 100%;
+    
+    top:0;
+    bottom:0;
+    left: 0;
+    margin: auto 0;
+}
+
+.title-section .span::before{
+    content: "";
+    background: var(--primart-color);
+    height: 2px;
+    width: 65%;
+    display: block;
+    top: 0;
+    margin-left: 1.5rem ;
+}
+
+
+a{
+    top:0;
+    bottom:0;
+    margin: auto 0;
+    min-width: fit-content
+}
+
+.title-section a::after{
+    content:"~~>";
+    display: inline;
+    margin-left: 10px;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    border: solid 0.7px var(--primart-color);
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+
+.hero h4::before{
+    content:"";
+    
+    background: var(--primary);
+    border-radius: 50%;
+    height: 40px;
+    aspect-ratio: 1;
+    display: block;
+    position: absolute;
+    background-image: url(/Portfolio/img/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 10px;
+    top: -23px;
+
+}
+
+.hero h3::after{
+    content:"";
+    
+    background: var(--primary);
+    border-radius: 50%;
+    height: 40px;
+    aspect-ratio: 1;
+    display: block;
+    position: absolute;
+    background-image: url(/Portfolio/img/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -26px
+
+}
+
+
+.foto-index{
+    height: 30px;
+   max-width: max-content;
+    border: solid 1px white;
+    left: 4rem;
+    
+    
+
+}
+
+.foto-index p{
+    margin: 0 30px;
+}
+
+.foto-index:before{
+    content:"";
+    background: var(--primart-color);
+    height: 15px;
+    aspect-ratio: 1;
+    display: block;
+    position: absolute;
+    top:-2px;
+    bottom:0;
+    margin: auto 0;
+    left: 8px;
+    opacity: 1
+    
+}
+
+
+
+.who{
+    position: absolute;
+    
+    right: -1px;
+    top: 4.5rem;
+    padding: 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.who::after{
+    content: "";
+    height: 40px;
+    aspect-ratio: 1;
+    display: block;
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: -1.3rem;
+    right: 1rem;
+    background-image: url(/Portfolio/img/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.who::before{
+    content: "";
+    height: 40px;
+    aspect-ratio: 1;
+    display: block;
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    right:44.5rem;
+    bottom: 8.2rem;
+    background-image: url(/Portfolio/img/quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+.hero{
+    margin-top: 20vh;
+    grid-template-columns: 2fr auto 2fr;
+    grid-auto-rows: auto;
+}
+
+.header{
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: auto;
+}
+
+.grid.header .text{
+
+    grid-column: 1/2;
+
+
+}
+
+.grid.header .img-fluid{
+    
+    grid-column: 2/3;
+
+}
+
+
+.cached{
+    border:rgb(194, 194, 194) 1px solid;
+}
+
+#aboutme .grid{
+    grid-template-columns: 2fr 1fr;
+}
+
+#aboutme .grid .container{
+  grid-column: 1/2;
+  padding-left: 18rem;
+}
+
+#aboutme .grid .container p{
+    font-size: 1rem;
+    margin-top: 8rem;
+}
+
+.img-about{
+    grid-column: 2/3;
+}
+
+#contacts .col-md-4 .container{
+    max-width: fit-content;
+    border: 1px solid white;
+    padding: 20px;
+}
+#contacts p{
+    font-size: 1.1rem;
+}
+
+#contacts .col-md-8 p{
+    max-width: 35rem;
+}
+
+#contacts .col-md-4 p{
+    margin: 0;
+}
+
+#footer{
+    
+    border-top: 1px solid white;
+    margin-top: 8rem;
+    padding-top: 3rem;
+}
+
+#footer p{
+    
+    font-size: 1;
+    margin: 0;
+    margin-top: 1.1rem;
+    max-width: 25rem;
+}
+
+.footer-social{
+    max-width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer h6{
+    font-size: 1.4rem;
+}
+
+#footer .justify-content-center{
+    padding: 2rem;
+}
+
+
+
+@media(max-width: 991px){
+    #project .grid, #aboutme .grid, #skills .grid, .hero{
+        display: block;
+    }
+
+    .signer, .dnone, #contacts::before{
+        display:none;
+    }
+
+    .hero h4{
+        position: relative;
+    }
+    
+
+    .hero
+
+    #skills .grid{
+        max-width: 12rem;
+        
+    }
+
+    .grid-card{
+        margin: 1rem 0;
+        max-width: 250px;
+    }
+
+    #aboutme .grid .container{
+        padding: 0;
+    }
+
+    .container-skill{
+        max-width: fit-content;
+    }
+
+    .card{
+        
+        transform: scale(0.95);
+    }
+
+    .imgdots{
+        display: none;
+    }
+
+    #header .container:nth-child(1){
+        display: block;
+    }
+
+    .hero{
+        margin-top: 8rem ;
+        
+    }
+
+    .hero h3, .hero h4{
+        font-size: 1.2rem;
+    }
+
+   .imgelement {
+        
+        display: none;
+        
+    }
+
+    .foto-index{left:0}
+
+    #aboutme .cont{
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;    
+  
+    }
+
+    
+}
+
+
+
+
+@media(max-width: 559px){
+    
+
+    #project .title-section{
+        flex-wrap: wrap;
+    }
+
+    #aboutme .grid .container p{
+        margin: 1rem;
+        margin-top: 0.5rem;
+        
+    }
+
+    #aboutme .grid .container .button{
+        margin: 1rem;
+        margin-top: 0.5rem;
+        
+    }
+
+    
+    
+    
+}
+
+
+@media(max-width: 426px){
+    .foto-index{
+        height: auto;
+    }
+
+}
+
+
+
+@media(max-width: 375px){
+    #project{
+        padding-top: 15rem ;
+    }
+}
+
+
