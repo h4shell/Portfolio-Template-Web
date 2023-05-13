@@ -100,7 +100,7 @@ h4{
 .hero h3{
     border: 1px solid white;
     grid-column: 2/3;
-    padding: 20px;
+    padding: 20px 10px;
     
 }
 
@@ -182,7 +182,7 @@ h4{
     height: 200px;
     width: 1px;
     position: absolute;
-    left: -50px;
+    left: -25px;
     top: 0;
 }
 
@@ -424,12 +424,19 @@ a{
 
 
 .foto-index{
-    height: 30px;
+    
    max-width: max-content;
     border: solid 1px white;
-    left: 4rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     
     
+
+}
+
+#aboutme .button{
+    z-index: 1;
 
 }
 
@@ -562,6 +569,9 @@ a{
         display: block;
     }
 
+  
+    
+
     .hero{
         margin-top: 80px;
         margin-bottom: 80px
@@ -621,7 +631,7 @@ a{
         
     }
 
-    .foto-index{left:0}
+    
 
     #aboutme .cont{
         min-width: 100vw;
