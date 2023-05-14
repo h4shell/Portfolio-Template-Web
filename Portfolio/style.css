@@ -14,7 +14,7 @@ canvas{
 =================== */
 :root{
     --primary: #282C33;
-    --primart-color: #c778dd;
+    --primary-color: #c778dd;
 
 }
 
@@ -34,7 +34,7 @@ img{
 nav a:hover{
     
     
-    box-shadow: 0px 2px 0px var(--primart-color);
+    box-shadow: 0px 2px 0px var(--primary-color);
 }
 
 nav a:hover{
@@ -75,12 +75,17 @@ body{
 
 
 
-
+.grid.hero{
+    
+    text-shadow: 3px 0px 1px  rgba(255, 255, 255, 0.281);
+}
 
 
 .grid{
     display: grid;
 }
+
+
 
 /*=================
     Tipography
@@ -102,7 +107,7 @@ h3{
 
 .title-section h3::before{
     content:"#";
-    color: var(--primart-color)
+    color: var(--primary-color)
 }
 
 a{
@@ -201,8 +206,9 @@ h4{
 
 .card img{
     height: 200px;
-    width: auto;
+    
     object-fit:cover;
+    min-width: 100%
 }
 
 #project::before{
@@ -266,7 +272,7 @@ h4{
 
 .navbar-nav a::before{
     content: "#";
-    color: var(--primart-color);
+    color: var(--primary-color);
     
     
 }
@@ -451,7 +457,7 @@ h4{
 
 .title-section .span::before{
     content: "";
-    background: var(--primart-color);
+    background: var(--primary-color);
     height: 2px;
     width: 65%;
     display: block;
@@ -476,7 +482,7 @@ a{
 .button{
     text-decoration: none;
     color: white;
-    border: solid 0.7px var(--primart-color);
+    border: solid 0.7px var(--primary-color);
     padding: 0.4rem 0.5rem;
     font-size: 0.8rem;
 }
@@ -519,11 +525,13 @@ a{
 
 .foto-index{
     
-   max-width: max-content;
+    max-width: max-content;
     border: solid 1px white;
     left: 0;
     right: 0;
     margin: 0 auto;
+    
+    
     
     
 
@@ -538,7 +546,7 @@ a{
     margin: 0 30px;
 }
 
-.foto-index:before{
+.foto-index:after{
     content:"";
     background: var(--primary-color);
     height: 15px;
@@ -769,6 +777,14 @@ a{
 }
 
 @media(max-width: 767px){
+
+    #contacts .col-md-4{
+        max-width: min-content;
+    }
+
+    #contacts .row{
+        justify-content: center;
+    }
 
     #header .container{
         max-width: 100%;
