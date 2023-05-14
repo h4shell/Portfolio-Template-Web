@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Portfolio/style.css" />
   </head>
   <body>
+    <canvas></canvas>
     <!--
       NAVBAR
 
@@ -106,7 +107,7 @@
             alt=""
           />
 
-          <div class="foto-index d-flex align-items-center">
+          <div class="foto-index d-flex align-items-center cont">
             <p>Currently working on <b>Portfolio</b></p>
             <img
               src="Portfolio/img/Dots.png"
@@ -239,7 +240,7 @@
             </p>
             <a class="button disabled" style="color: grey">Read More -></a>
           </div>
-          <div class="cont">
+          <div class="contr d-flex justify-content-center">
             <img
               src="Portfolio/img/about.png"
               class="img-about img-fluid"
@@ -263,7 +264,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <div class="container">
+            <div class="container cont">
               <h5>Message me here</h5>
               <a href="https://discordapp.com/users/Shell#2763"
                 ><div
@@ -299,7 +300,11 @@
           <div class="col-sm-9">
             <div class="logo-footer">
               <div class="container footer-logo-img">
-                <img src="Portfolio/img/logo.svg" alt="" />
+                <img
+                  src="Portfolio/img/logo.svg"
+                  alt=""
+                  style="scale: 1 !important"
+                />
               </div>
               <p>Web designer e sviluppatore front-end</p>
             </div>
@@ -307,17 +312,17 @@
           <div class="col-sm-1">
             <h6>Media</h6>
             <div class="container footer-social d-flex">
-              <div class="cont">
+              <div class="contr">
                 <a href="https://github.com/h4shell"
                   ><img src="Portfolio/img/Github.svg" alt=""
                 /></a>
               </div>
-              <div class="cont">
+              <div class="contr">
                 <a href="https://www.figma.com/"
                   ><img src="Portfolio/img/Figma.svg" alt=""
                 /></a>
               </div>
-              <div class="cont">
+              <div class="contr">
                 <a href="https://discordapp.com/users/Shell#2763"
                   ><img src="Portfolio/img/Discord.svg" alt=""
                 /></a>
@@ -331,6 +336,48 @@
       </div>
     </section>
 
+    <script>
+      // Initialising the canvas
+      var canvas = document.querySelector("canvas"),
+        ctx = canvas.getContext("2d");
+
+      // Setting the width and height of the canvas
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Setting up the letters
+      var letters =
+        "ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ";
+      letters = letters.split("");
+
+      // Setting up the columns
+      var fontSize = 10,
+        columns = canvas.width / fontSize;
+
+      // Setting up the drops
+      var drops = [];
+      for (var i = 0; i < columns; i++) {
+        drops[i] = 1;
+      }
+
+      // Setting up the draw function
+      function draw() {
+        ctx.fillStyle = "rgba(0, 0, 0, .1)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < drops.length; i++) {
+          var text = letters[Math.floor(Math.random() * letters.length)];
+          ctx.fillStyle = "#0f0";
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          drops[i]++;
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.95) {
+            drops[i] = 0;
+          }
+        }
+      }
+
+      // Loop the animation
+      setInterval(draw, 33);
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

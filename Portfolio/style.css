@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+
+canvas{
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    opacity: 0.4;
+    min-width: 100vw;
+    
+}
 /*=================
         Global
 =================== */
@@ -11,6 +20,15 @@
 
 *{
     position: relative;
+}
+
+#footer img:hover, #contacts img:hover, #navigator img:hover{
+    scale: 1.2;
+    filter: brightness(1.5);
+}
+
+img{
+    transition: scale 0.3s ease-in-out;
 }
 
 nav a:hover{
@@ -65,6 +83,11 @@ body{
 /*=================
     Tipography
 =================== */
+
+.hero h3, .hero h4{
+    font-weight: 100;
+    
+}
 
 h2{
     font-size: clamp(1.0, 1.9rem,2vw);
@@ -247,8 +270,26 @@ h4{
 }
 
 .grid-card{
-    border:1px solid white;
-    background: var(--primary)    
+    
+    
+    opacity: 1
+}
+
+.grid-card::before{
+    content:"";
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(40, 44, 51, 0);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+    border: 1px solid white;
 }
 
 .container-skill .grid-card:nth-child(1){
@@ -327,7 +368,7 @@ h4{
 
 .myprojects .card{
     background: transparent;
-    border: 1px solid white;
+    
     border-radius: 0;
     color: white;
     overflow: hidden;
@@ -370,8 +411,31 @@ h4{
 }
 
 .cont{
-    background: var(--primary);
+    background: transparent   ;
+    opacity: 1;
+    
 }
+
+.cont::before{
+    content:"";
+    height: 100%;
+    display: block;
+    /* From https://css.glass */
+    background: rgba(40, 44, 51, 0);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border: 1px solid white;
+    
+
+}
+
 
 .title-section .span{
     height: 2px;
@@ -474,7 +538,7 @@ a{
 
 .foto-index:before{
     content:"";
-    background: var(--primart-color);
+    background: var(--primary-color);
     height: 15px;
     aspect-ratio: 1;
     display: block;
@@ -547,7 +611,7 @@ a{
 #contacts .col-md-4 .container{
     max-width: fit-content;
     border: 1px solid white;
-    padding: 20px;
+    padding: 8px;
 }
 
 #contacts .col-md-4 img{
@@ -597,9 +661,35 @@ a{
     padding: 2rem;
 }
 
+.grid-card{
+    transform: scale(1);
+    transition: scale 0.3s ease-in-out;
+}
+
+.grid-card:hover{
+    scale: 1.1!important;
+}
+
 
 
 @media(max-width: 991px){
+    
+    
+    .grid-card:nth-child(2){
+        transform: translateX(50px);
+    }
+    .grid-card:nth-child(3){
+        transform: translateX(-50px);
+    }
+    .grid-card:nth-child(4){
+        transform: translateX(50px);
+    }
+
+    
+
+
+
+
     #project .grid, #aboutme .grid, #skills .grid{
         display: block;
     }
@@ -676,7 +766,15 @@ a{
     
 }
 
+@media(max-width: 767px){
 
+    #header .container{
+        max-width: 100%;
+        
+
+    }
+    
+}
 
 
 @media(max-width: 575px){
