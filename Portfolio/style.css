@@ -52,6 +52,8 @@ body{
     
 }
 
+
+
 .myprojects img{
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
@@ -831,6 +833,12 @@ a{
 
 
 @media(max-width: 375px){
+    #footer .d-flex.justify-content-center:last-child{
+        min-width: fit-content;
+        padding: 5px 0;
+        margin-bottom: 15px;
+        
+    }
     
 }
 
