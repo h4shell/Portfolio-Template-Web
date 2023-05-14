@@ -18,9 +18,17 @@ canvas{
 
 }
 
+
+
+
 *{
+    user-select: none; /* Standard syntax */
+    
     position: relative;
+    box-sizing: border-box;
 }
+
+
 
 #footer img:hover, #contacts img:hover, #navigator img:hover{
     scale: 1.2;
@@ -63,6 +71,10 @@ body{
     transform: scale(1.2);
 }
 
+.myprojects img{
+    pointer-events:all!important;
+    
+}
 
 
 #navigator{
@@ -526,7 +538,6 @@ a{
 .foto-index{
     
     max-width: max-content;
-    border: solid 1px white;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -560,7 +571,6 @@ a{
     opacity: 1
     
 }
-
 
 
 
@@ -619,8 +629,7 @@ a{
 }
 
 #contacts .col-md-4 .container{
-    max-width: fit-content;
-    border: 1px solid white;
+    max-width: min-content;
     padding: 8px;
 }
 
@@ -681,6 +690,9 @@ a{
 }
 
 
+.navbar-toggler:focus{
+    box-shadow: none;
+  }
 
 @media(max-width: 991px){
     
@@ -855,7 +867,15 @@ a{
         margin-bottom: 15px;
         
     }
+
+    .foto-index p{
+        font-size: 0.85rem!important;
+    }
+    
     
 }
+
+
+
 
 
