@@ -13,6 +13,16 @@
     position: relative;
 }
 
+nav a:hover{
+    
+    
+    box-shadow: 0px 2px 0px var(--primart-color);
+}
+
+nav a:hover{
+    transition: box-shadow 0.1s ease-in-out;
+}
+
 .hide{
     display: none;
 }
@@ -22,6 +32,15 @@ body{
     color: white;
     font-family: 'Fira Code', monospace;
     
+}
+
+.myprojects img{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.myprojects img:hover{
+    transform: scale(1.2);
 }
 
 
@@ -146,6 +165,14 @@ h4{
 /*=================
     Elements
 =================== */
+
+#contacts .col-md-4 p{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+
+
 
 .card img{
     height: 200px;
@@ -303,6 +330,7 @@ h4{
     border: 1px solid white;
     border-radius: 0;
     color: white;
+    overflow: hidden;
 
 }
 
@@ -389,7 +417,7 @@ a{
 
 
 
-.hero h4::before{
+.hero h3::before{
     content:"";
     
     background: var(--primary);
@@ -402,7 +430,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     right: 10px;
-    top: -23px;
+    bottom: -19px;
 
 }
 
@@ -521,6 +549,13 @@ a{
     border: 1px solid white;
     padding: 20px;
 }
+
+#contacts .col-md-4 img{
+    max-width: 25px;
+    margin-right: 10px;
+}
+
+
 #contacts p{
     font-size: 1.1rem;
 }
@@ -565,11 +600,14 @@ a{
 
 
 @media(max-width: 991px){
-    #project .grid, #aboutme .grid, #skills .grid, .hero{
+    #project .grid, #aboutme .grid, #skills .grid{
         display: block;
     }
 
   
+    #header h2{
+        margin-top: 5px;
+    }
     
 
     .hero{
@@ -581,12 +619,7 @@ a{
         display:none;
     }
 
-    .hero h4{
-        position: relative;
-    }
-    
 
-    
 
     #skills .grid{
         max-width: 12rem;
