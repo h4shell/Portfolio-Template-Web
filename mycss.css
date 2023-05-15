@@ -63,3 +63,11 @@ text-align:start;
   flex-direction: column;
 }
 
+.flex-grow > * {
+  flex-grow: 1;
+}
+
+.flex-shrink > *{
+  flex-shrink: 1;
+}
+
