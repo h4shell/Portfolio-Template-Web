@@ -159,6 +159,7 @@ h6, #promoter a{
     padding: 10px 30px;
     max-width: fit-content;
     text-align: center;
+    border-radius: 6px;
 }
 
 #header p{
@@ -380,18 +381,65 @@ ul{
     max-width: 1200px;
 }
 
+.button-white{
+    background: transparent;
+    color: var(--primary);
+}
 
 
 .text-white{
     color: white!important;
 }
 
+.container-button{
+    display: flex;
+    gap: 0px 15px
+}
 
+nav{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+#footer input{
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.container-nav{
+    background: #F5F7FA;
+    padding-bottom: 30px;
+}
 
 
 @media (max-width: 991px){
 
-  
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .navbar-nav{
+        gap: 0!important;
+        
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        transform: scale(0.9);
+        border: none!important;
+
+    }
+
+    .container-button a{display: none;}
+    .cc{display: block!important;}
+
+    .navbar .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
   
     .col-md-5 .container{
         flex-wrap: wrap;
@@ -458,6 +506,9 @@ ul{
         line-height: 2.9rem!important;
     }
 
-
+    
+    .pad{
+        padding: 0px 30px!important;
+    }
 
 }
