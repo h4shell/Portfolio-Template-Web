@@ -350,7 +350,52 @@ h5{
 .rmore{
     text-align: center;
 }
+
+
+#footer{
+    background: #263238;
+    padding: 40px 5px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+#footer .row .container{
+    background: transparent;
+}
+
+#footer li, footer p{
+    color: white!important;
+}
+
+.text-white{
+    color: white!important;
+}
+
+.container-logo-footer img{
+    margin-bottom: 20px;
+}
+
+
 @media (max-width: 991px){
+
+    #footer .row{
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        gap:10px
+    }
+
+    #footer .row h6{
+        text-align: center;
+    }
+
+    .col-md-5 .container{
+        flex-wrap: wrap;
+    }
+
     h2{
         line-height: 4rem;
     }
@@ -386,7 +431,13 @@ h5{
 
 }
 
-
+@media (max-width: 767px){
+    .container-logo-footer img, .container-logo-footer > *{
+        padding: 20px 5px;
+        text-align: center;
+        
+    }
+}
 
 @media (max-width: 575px){
     #designer .grid{
@@ -404,4 +455,17 @@ h5{
     h6{
         line-height: 2.9rem!important;
     }
+
+    #footer .row > *{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-basis: 800px;
+    flex-grow: 1;
+    }
+
+    .container-foto-footer{
+        background: red;
+    }
+
 }
