@@ -339,7 +339,7 @@ h5{
 
 .mark2::after{
     content:"";
-    background-image: url(/Template5/img/mark.png);
+    background-image: url('img/mark.png');
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
