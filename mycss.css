@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+  }
+
+.container {
+max-width: min(1320px, 100% - 1rem);
+margin: 0 auto;
+}
+
+.d-flex {
+display: flex;
+}
+
+.justify-content-center {
+justify-content: center;
+}
+
+.align-items-center {
+align-items: center;
+}
+
+.wrap{
+gap: 5px;
+flex-wrap: wrap;
+}
+
+.position-absolute{
+position: absolute;
+top:0;
+right: 0;
+left: 0;
+right: 0;
+}
+
+.m-auto{
+margin: 0 auto;
+}
+
+.d-block{
+display: block;
+}
+
+.text-center{
+text-align: center;
+}
+
+.text-justify{
+text-align:justify;
+}
+
+.text-end{
+text-align:end;
+}
+
+.text-start{
+text-align:start;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
