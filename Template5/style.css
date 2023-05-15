@@ -412,6 +412,9 @@ nav{
     padding-bottom: 30px;
 }
 
+.container-1 p{
+    margin: 1.8rem 0
+}
 
 @media (max-width: 991px){
 
