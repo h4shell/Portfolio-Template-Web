@@ -276,7 +276,7 @@ h5{
 
 .rmore{
     flex-grow: 0;
-    flex-basis: 200px;
+    flex-basis: 373px;
     
 }
 
@@ -380,6 +380,10 @@ h5{
         padding: 0!important;
     }
 
+    .container-rmore{
+        transform: scale(0.8);
+    }
+
 }
 
 
@@ -395,5 +399,9 @@ h5{
 
     h2{
         line-height: 2.5rem;
+    }
+
+    h6{
+        line-height: 2.9rem!important;
     }
 }
