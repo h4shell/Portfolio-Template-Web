@@ -427,6 +427,7 @@ nav{
 input{
     z-index: 2;
     position: relative;
+    max-width: 225px;
 }
 
 input::placeholder{
@@ -445,7 +446,7 @@ input::placeholder{
     content: url('img/send.png');
     position: absolute;
     z-index: 1!important;
-    transform: translate(-18px, 11px);
+    transform: translate(-3px, 11px);
     
      
 }
