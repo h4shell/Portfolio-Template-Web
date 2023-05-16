@@ -402,10 +402,6 @@ nav{
 }
 
 
-#footer input{
-    padding: 8px;
-    border-radius: 15px;
-}
 
 .container-nav{
     background: #F5F7FA;
@@ -414,6 +410,56 @@ nav{
 
 .container-1 p{
     margin: 1.8rem 0
+}
+
+#footer input, #footer input:focus{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    
+    
+
+}
+
+input{
+    z-index: 2;
+    position: relative;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.container-input{
+    padding: 0;
+    display: block;
+    z-index: 0!important
+    
+    
+}
+
+#footer .container-input::after{
+    content: url('img/send.png');
+    position: absolute;
+    z-index: 1!important;
+    transform: translate(-18px, 11px);
+    
+     
+}
+
+#footer .container-input::before{
+    content: "";
+    width: 250px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.164);
+    border-radius: 25px;
+    position: absolute;
+    z-index: 0;
+ 
+    
 }
 
 @media (max-width: 991px){
