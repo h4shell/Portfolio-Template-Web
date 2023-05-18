@@ -175,7 +175,7 @@
     }
   
     .container-sx p {
-      padding-bottom: 25px;
+      padding-bottom: 15px;
     }
   
     .cerchio p {
@@ -212,7 +212,7 @@
     .grid {
       grid-template-columns: 1fr;
       box-shadow: none;
-      height: 95%;
+      height: min-content;
     }
   
     .button {
