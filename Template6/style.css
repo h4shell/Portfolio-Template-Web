@@ -30,7 +30,7 @@ body {
   /*left: 442px;*/
   right: 442px;
   top: 166px;
-    position: absolute;
+  position: absolute;
 
   background: #35AB82;
   opacity: 0.2;
@@ -129,7 +129,7 @@ svg {
 }
 
 h2.text-header__hero {
-  font-size: clamp(1.5rem, 3vw, 5rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   line-height: 119%;
   margin: 0;
 }
