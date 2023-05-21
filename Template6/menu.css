@@ -5,19 +5,7 @@
   }
 
 
-  .light{
-    position: absolute;
-width: 591px;
-height: 591px;
-left: 442px;
-top: 166px;
-position: absolute;
-
-background: #35AB82;
-opacity: 0.2;
-filter: blur(200px);
-border-radius: 10px;
-  }
+  
 
   body{
     overflow-x:hidden ;

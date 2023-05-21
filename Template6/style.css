@@ -4,9 +4,15 @@
   --font-family: "Lato", sans-serif;
 }
 
+*{
+  position: relative;
+}
+
 li{
   text-transform: uppercase;
 }
+
+
 
 body {
   font-family: var(--font-family);
@@ -14,14 +20,31 @@ body {
   margin: 0;
   color: white;
   overflow-x: hidden;
-  
-  
+
+}
+
+.light{
+  position: absolute;
+  width: 591px;
+  height: 591px;
+  /*left: 442px;*/
+  left: 442px;
+  top: 166px;
+    position: absolute;
+
+  background: #35AB82;
+  opacity: 0.2;
+  filter: blur(200px);
+  border-radius: 10px;
+ 
   
 }
+
 
 a{
   text-transform: uppercase;
 }
+
 
 
 .pad{
@@ -263,6 +286,10 @@ section{
   margin: 0 auto
   
 }
+
+
+
+
 .container-input__subscribe{
   
   max-width: 34rem;
