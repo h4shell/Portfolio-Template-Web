@@ -1,0 +1,7 @@
+Portfolio: https://www.figma.com/file/GMfNPrNeMWRrQouBInJtZr/Portfolio-(Community)?type=design&node-id=0-1&t=Pag3VECAghEDO4j7-0
+    template1: https://www.figma.com/file/aV3NSgbd0OX4jHWL2K8INU/Website-(Community)?type=design&node-id=0-1&t=FNY76EgmeCoWZ8s8-0
+    template2: https://www.figma.com/file/r6BKFEDWega8sT6SFgEZ4a/Restaurant-website-design-(Community)?type=design&node-id=1-2&t=YeL0lkjsGQG78aVL-0
+    template3: https://www.figma.com/file/pN0gupvgX8tWLGvUA8MrjQ/MNTN---Landing-Page-(Community)?type=design&t=h78qPUyccNECjQOY-0
+    template4: https://www.figma.com/file/30whTmesrEsaiw06onh7FQ/Ferrari-Superfast-813-by-arshakir?type=design&node-id=1-74&t=YT5Sl7Y3po2Zxjew-0
+    template5: https://www.figma.com/file/P7x6c6ZX3fE1KE6KU9DTVk/Responsive-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design-(Community)?type=design&node-id=0-1&t=5WJr27OE7HFOAXNt-0
+    template6: https://www.figma.com/file/2kC7goON7Byu6IUWETh2A3/Metaverse-website-template?type=design&node-id=2-65&t=4A1ByhtSQi8edNgN-0

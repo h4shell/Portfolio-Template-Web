@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+
+:root {
+  --font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: #1B1B1B;
+  margin: 0;
+  color: white;
+  
+  
+  
+}
+
+
+.pad{
+  padding: 4rem 6vw;
+}
+
+.d-block{
+  display: block;
+}
+
+.bg-color__hero{
+  background: #151515;
+}
+
+.row{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+svg {
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 1/1;
+}
+
+.container__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #151515;
+  color: white;
+  padding: 4rem 6vw;
+  overflow-x: hidden;
+}
+
+.container__homepage{
+  padding:  4rem 6vw;;
+}
+
+
+.container-img__hero{
+  
+  background: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
+  border-radius: 50%;
+  padding: 20px;
+  aspect-ratio: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: min(30px, 50px);
+  border: 1px solid white;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container-img__hero:before{
+  content:"";
+  position: absolute;
+  inset: -15px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: -2;
+  border: 1px solid #969696;
+  
+}
+
+.container-text__hero {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 2rem;
+}
+
+h2.text-header__hero {
+  font-size: clamp(1.5rem, 3vw, 5rem);
+  line-height: 119%;
+  margin: 0;
+}
+
+
+
+h3{
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: white;
+  font-weight: 700;
+  
+}
+
+.container-text__track h3{
+  margin: 0;
+}
+
+p {
+  font-size: clamp(1rem, 1vw, 1.375rem);
+  line-height: 119%;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #969696;
+  margin: 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.button.primary {
+  color: black;
+  background: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
+}
+
+.container-button__hero {
+  display: flex;
+}
+
+.container-brand__homepage{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+  max-width: 90%;
+  margin: 0 auto 4rem auto;
+  
+  
+    
+}
+
+
+.container-card__homepage{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+
+.container-card__homepage > *{
+  
+  justify-content: center;
+  
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: white;
+  background: #151515;
+  padding: 50px 20px;
+  min-width: 230px;
+  border-radius: 25px;
+  border: 1px solid white;
+
+}
+
+section{
+  padding: 0 0 4rem 0px;
+}
+
+.card h3, .card span{
+  margin: 0;
+  text-align: center
+}
+
+.card .container-button{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.container-img__card svg{
+  max-width: 100px;
+  margin-bottom: 1.5rem;
+  height: max-content;
+  aspect-ratio: 1;
+}
+
+.container-img__card{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container-track{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.container-track:first-child{
+  margin-top: 5rem;
+}
+
+.container-text__track{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  
+}
+
+
+
+.container-wrapper__track{
+  display: grid;
+  gap: 4rem;
+}
+
+.title-section__homepage{
+  margin-bottom: 7rem;
+}
+
+.container__subscribe{
+  max-width: 50rem; 
+}
+
+.container__subscribe p{
+  margin-bottom: 4rem;
+}
+
+.container__subscribe input{
+  background: none;
+  margin: 0;
+  border: none;
+  width: 90%;
+  margin: 0 auto
+  
+}
+.container-input__subscribe{
+  
+  max-width: 34rem;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.container-input__subscribe::after{
+  content:"";
+  background: black;
+  position: absolute;
+  inset:0;
+  z-index:-10;
+  height: 200%;
+  top: -8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+
+  
+  
+}
+
+.button-subscribe{
+  position: absolute;
+  z-index: 100;
+  right:-4px;
+  top:-5.5px;
+  transform: scale(0.9);
+  border-radius: 10px
+}
+
+
+@media (max-width: 55em) {
+
+
+  .flex-reverse{
+    flex-direction: column-reverse;
+  }
+
+  .container__hero {
+    flex-direction: column;
+  }
+  
+  .container-brand__homepage{
+  
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5rem;
+  
+  grid-template-rows: 2fr 2fr
+    
+    
+  }
+
+  .container-track{
+    
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
