@@ -209,7 +209,7 @@ p {
   padding: 50px 20px;
   min-width: 230px;
   border-radius: 25px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.267);
 
 }
 
