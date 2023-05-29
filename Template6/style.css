@@ -6,6 +6,26 @@
 
 *{
   position: relative;
+
+}
+
+::selection{
+  color:white;
+  background: rgba(44, 87, 70, 0.3);
+}
+
+input::selection{
+  background: white;
+  color: black;
+}
+
+
+nav{
+  user-select: none; /* Standard syntax */
+}
+
+::selection{
+  color: none;
 }
 
 li{
@@ -45,10 +65,18 @@ a{
   text-transform: uppercase;
 }
 
+input{
+  color:#969696
+}
+
+input:focus{
+  outline: none;
+  color: white;
+}
 
 
 .pad{
-  padding: 4rem 6vw;
+  padding:  4rem 6rem;;
 }
 
 .d-block{
@@ -60,7 +88,7 @@ a{
 }
 
 .row{
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -85,7 +113,7 @@ svg {
 }
 
 .container__homepage{
-  padding:  4rem 6vw;;
+  padding:  4rem 6rem;;
 }
 
 
@@ -93,7 +121,7 @@ svg {
   
   background: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
   border-radius: 50%;
-  padding: 20px;
+  padding: 0 20px;
   aspect-ratio: 1;
   min-width: 300px;
   display: flex;
