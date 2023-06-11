@@ -383,9 +383,14 @@ h4{
     gap: 10px;
     grid-auto-rows: max-content;
     max-width: max-content;
+
+    overflow: hidden;
     
     
 }
+
+
+
 
 .myprojects .card{
     background: transparent;
@@ -554,6 +559,20 @@ a{
 
 }
 
+#freccia{
+    background:url(/Portfolio/img/freccia.png);
+    background-repeat: no-repeat;
+    
+    
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(20px);
+    
+}
+
 .foto-index p{
     margin: 0 30px;
 }
@@ -694,6 +713,19 @@ a{
 .navbar-toggler:focus{
     box-shadow: none;
   }
+  
+
+.viewall{
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.viewall:hover{
+    box-shadow: 0px 2px 0px white;
+    
+    
+
+}
+
 
 @media(max-width: 991px){
     
