@@ -74,3 +74,6 @@ text-align:start;
 .display-contents{
   display: contents;
 }
+
+#footer p{
+    max-width: 100%;
